@@ -39,6 +39,9 @@ const addTokens = async (req, res) => {
         if (typeof (tokens) !== 'number') {
             throw "Tokens must be a valid number";
         }
+        if(tokens<0){
+            throw "Token number must be positive"
+        }
 
         let prevTokens = 0,
             curTokens = 0;
