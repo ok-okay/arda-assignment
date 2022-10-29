@@ -31,25 +31,25 @@ The following edge cases are handled in each of the
 
 1. API that accepts a user won some dream tokens at a particular time:
 
-The first thing is to make sure playerId is a string, time is a datetime object, tokens are positive.
+>> The first thing is to make sure playerId is a string, time is a datetime object, tokens are positive.
 
-Then I checked to make sure the total tokens earned by any player cannot exceed the maximum permissible limit (in this case, $5)
+>> Then I checked to make sure the total tokens earned by any player cannot exceed the maximum permissible limit (in this case, $5)
 
-If the playerId doesn't exist, a new player is created and tokens are added.
+>> If the playerId doesn't exist, a new player is created and tokens are added.
 
 2. API that returns the history of tokens a user has won today:
 
-Only looked at type of playerId being a string. If there are no transactions/player doesn't exist, an empty array is returned
+>> Only looked at type of playerId being a string. If there are no transactions/player doesn't exist, an empty array is returned
 
 3. API that returns history of USD won by user till specific time:
 
-Only looked at type of playerId being a string. If there are no transactions/player doesn't exist, an empty array is returned
+>> Only looked at type of playerId being a string. If there are no transactions/player doesn't exist, an empty array is returned
 
 4. API that returns stats:
 
-Player ID string check
+>> Player ID string check
 
-If the player doesn't exist, returns 404 error
+>> If the player doesn't exist, returns 404 error
 
 ## More APIs to implement
 
