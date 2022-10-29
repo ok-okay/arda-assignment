@@ -1,4 +1,4 @@
-const MAX_TOKENS = 10;
+const MAX_TOKENS = 5;
 const TOKEN_TO_USD = 0.15;
 const USD_TO_FEES = 0.15;
 

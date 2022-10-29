@@ -4,7 +4,10 @@ const dreamlandFeesSchema = {
     time: Object,
     playerId: String,
     usd: Number,
-    fees: Number,
+    fees: {
+        type: Number,
+        min: 0
+    },
     description: String
 };
 
